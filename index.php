@@ -11,7 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <?php include ('navbar.php') ?>
@@ -42,7 +42,7 @@
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
         <div class="card-deck h-80">
           <div class="card">
-            <img src="img/CP2012.jpg" class="card-img-top" alt="">
+            <img src="assets/img/CP2012.jpg" class="card-img-top" alt="">
             <div class="card-body">
               <h3 class="card-title"></h3>
               <p class="card-text"><small class="text-muted" id="textMute">Courrier Picard Juin 2012.</small></p>
@@ -53,7 +53,7 @@
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
         <div class="card-deck h-80">
           <div class="card">
-            <img src="img/CP2013_1.jpg" class="card-img-top" alt="">
+            <img src="assets/img/CP2013_1.jpg" class="card-img-top" alt="">
             <div class="card-body">
               <h3 class="card-title"></h3>
               <p class="card-text"><small class="text-muted">Courrier Picard juillet 2013.</small></p>
@@ -64,7 +64,7 @@
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
         <div class="  card-deck h-80" id="LastCard">
           <div class="card">
-            <img src="img/CP2014_1.jpg" class="card-img-top" alt="">
+            <img src="assets/img/CP2014_1.jpg" class="card-img-top" alt="">
             <div class="card-body">
               <h3 class="card-title"></h3>
               <p class="card-text"><small class="text-muted">Courrier Picard juin 2014.</small></p>

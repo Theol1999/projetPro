@@ -81,5 +81,5 @@
                 <!-- Copyright -->
               </footer>
             <!-- Footer -->
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/script.js"></script>
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/script.js"></script>

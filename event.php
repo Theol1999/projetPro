@@ -14,7 +14,7 @@ require_once 'controllers/eventCtrl.php';
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-      <link rel="stylesheet" href="css/event.css" />
+      <link rel="stylesheet" href="assets/css/event.css" />
       <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
    </head>
    <body class="eventBody">
@@ -25,7 +25,7 @@ require_once 'controllers/eventCtrl.php';
          <div class="card__box col-md-12 col-sm-12">
                <div class="card">
                   <div class="card__img">
-                     <img class="card__img-preview" src="img/bridge.jpg" alt="Image name">
+                     <img class="card__img-preview" src="assets/img/bridge.jpg" alt="Image name">
                      <div class="card-img-overlay"><span class="badge badge-pill badge-danger"><?= $event->category ?></span> </div>
                   </div>
                   <div class="card__content">
