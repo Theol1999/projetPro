@@ -169,6 +169,10 @@ $(function () {
      //et on affiche le formulaire de connexion
      $('#connectForm').show();
    });
-      
-      
+   var windowsLocation = window.location.href.split('?')[0];
+   if(windowsLocation === 'http://projetpro/listeEvent.php') {
+      $('.deleteButton').click(function() {
+        $('#deleteConfirm').val($(this).attr('data-id'));
+      });
+   }
 });

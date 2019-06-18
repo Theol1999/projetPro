@@ -2,6 +2,8 @@
 
 require 'models/users.php';
 $regexId = '#^[0-9]+#';
+ // j'instancie mon objet user
+   // $users devient un objet users et à accès à tous les attributs et toutes les methodes
 $user = new users();
 if (!empty($_SESSION['id'])) {
    if (preg_match($regexId, $_SESSION['id'])) {

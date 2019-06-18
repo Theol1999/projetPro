@@ -26,10 +26,20 @@ require 'controllers/ajout-membreCtrl.php'; ?>
                   <h2 class="title">Connexion</h2>
                   <form method="POST" action="login.php?sign=0">
                      <div class="input-group">
-                        <input class="input--style-3" type="email" placeholder="Email" name="mail">
+                        <input class="input--style-3" type="email" placeholder="Email" name="mail" value="<?= isset($_POST['mail']) ? $_POST['mail'] : '' ?>">
+                         <?php if (isset($formErrors['mail'])) { ?>
+                           <div class="alert-danger">
+                              <p><?= $formErrors['mail'] ?></p>
+                           </div>
+                        <?php } ?>
                      </div>
                      <div class="input-group">
-                        <input class="input--style-3" type="password" placeholder="Mot de passe" name="password">
+                        <input class="input--style-3" type="password" placeholder="Mot de passe" name="password" />
+                             <?php if (isset($formErrors['password'])) { ?>
+                           <div class="alert-danger">
+                              <p><?= $formErrors['password'] ?></p>
+                           </div>
+                        <?php } ?>
                      </div>
                      <input class="d-none" type="text" name="form-type" value="signin">
                      <div class="p-t-10">

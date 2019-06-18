@@ -25,9 +25,12 @@ require 'controllers/update-membreCtrl.php'; ?>
                   <h2 class="title">Mes informations</h2>
                   <form method="POST" action="profil.php">
                      <div class="input-group">
+                        <!--Je vérifie que la session n'est pas vide -->
                        <?php if (!empty($_SESSION)) {
                      ?>
+                        <!--Je récupère dans le valeur de mon input la donnée stocké dans ma session pour l'afficher-->
                         <input class="input--style-3" type="text" name="lastName" id="lastname" value="<?= $_SESSION['lastName'] ?>" required placeholder="Nom">
+                        <!--Si l'erreur lastName existe alors j'affiche une alert avec l'erreur preparé pour lastName-->
                         <?php if (isset($formErrors['lastName'])) { ?>
                            <div class="alert-danger">
                               <p><?= $formErrors['lastName'] ?></p>
@@ -60,10 +63,12 @@ require 'controllers/update-membreCtrl.php'; ?>
                         <?php } ?>
                      </div>
                      <input class="d-none" type="text" name="form-type" value="signup">
+                     <!-- Si mes données mise dans mon formulaire sont bien envoyé en base de données j'affiche un message de succés à l'utilisateur -->
                      <?php if (isset($formSuccess)) { ?>
                            <div class="alert-success formSuccess">
                               <p><?= $formSuccess ?></p>
                            </div>
+                     <!-- Sinon si il y'a une erreur j'affiche l'erreur avec le message d'erreur correspondant -->
                         <?php } else if (isset($formErrors['add'])){?>
                            <div class="alert-danger">
                               <p><?= $formErrors['add'] ?></p>
